@@ -119,23 +119,6 @@ cal_data = pd.read_csv('./m5-forecasting-accuracy/calendar.csv')
 ```python
 price_data.head(1)
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -158,16 +141,9 @@ price_data.head(1)
   </tbody>
 </table>
 </div>
-
-
-
-
 ```python
 sale_data.iloc[1,:]
 ```
-
-
-
 
     id          HOBBIES_1_002_CA_1_validation
     item_id                     HOBBIES_1_002
@@ -263,13 +239,6 @@ cal_data.head(1)
         vertical-align: middle;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -314,8 +283,6 @@ cal_data.head(1)
 </div>
 
 
-
-
 ```python
 plt.hist(day_data[day_data<100].values.reshape(-1),bins=100);
 ```
@@ -324,8 +291,6 @@ plt.hist(day_data[day_data<100].values.reshape(-1),bins=100);
       keep = (tmp_a >= first_edge)
     C:\Users\12854\Anaconda3\lib\site-packages\numpy\lib\histograms.py:825: RuntimeWarning: invalid value encountered in less_equal
       keep &= (tmp_a <= last_edge)
-    
-
 
 ![png](output_16_1.png)
 
@@ -457,12 +422,10 @@ def create_feature(sale_data, is_train=True, day=None):
     return sale_data
 ```
 
-
 ```python
 sale_data = create_train_data(train_start=350,is_train=True)
 sale_data = create_feature(sale_data)
 ```
-
 
 ```python
 pd.options.display.max_columns = 33
@@ -473,13 +436,7 @@ pd.options.display.max_columns = 33
 sale_data.shape
 ```
 
-
-
-
     (40718219, 31)
-
-
-
 
 ```python
 sale_data[sale_data.event_name_1 != 0]
@@ -494,13 +451,6 @@ sale_data[sale_data.event_name_1 != 0]
         vertical-align: middle;
     }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -936,22 +886,10 @@ y_train = sale_data["sales"]
 ```python
 X_train.head(5)
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -1136,9 +1074,6 @@ X_train.head(5)
 ```python
 y_train.head(5)
 ```
-
-
-
 
     869062    0.0
     869063    0.0
