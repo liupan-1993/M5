@@ -119,7 +119,7 @@ cal_data = pd.read_csv('./m5-forecasting-accuracy/calendar.csv')
 ```python
 price_data.head(1)
 ```
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -164,8 +164,6 @@ sale_data.iloc[1,:]
 ```python
 sale_data.head(1)
 ```
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -230,16 +228,6 @@ sale_data.head(1)
 cal_data.head(1)
 ```
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -441,17 +429,6 @@ sale_data.shape
 ```python
 sale_data[sale_data.event_name_1 != 0]
 ```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -886,12 +863,7 @@ y_train = sale_data["sales"]
 ```python
 X_train.head(5)
 ```
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-</style>
+
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
